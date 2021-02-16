@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap-5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="timer-input">
+        <input type="text" class="form-control center-text" disabled id="tinput"/>
+      </div>
+      <div class="buttons-group">
+        <div class="btn-group container" role="group">
+          <button type="button" class="btn btn-light">1</button>
+          <button type="button" class="btn btn-light">2</button>
+          <button type="button" class="btn btn-light">3</button>
+        </div>
+        <div class="spacer"></div>
+        <div class="btn-group container" role="group">
+          <button type="button" class="btn btn-light">4</button>
+          <button type="button" class="btn btn-light">5</button>
+          <button type="button" class="btn btn-light">6</button>
+        </div>
+        <div class="spacer"></div>
+        <div class="btn-group container" role="group">
+          <button type="button" class="btn btn-light">7</button>
+          <button type="button" class="btn btn-light">8</button>
+          <button type="button" class="btn btn-light">9</button>
+        </div>
+        <div class="spacer"></div>
+        <div class="btn-group container" role="group">
+          <button type="button" class="btn btn-light hide">&nbsp;</button>
+          <button type="button" class="btn btn-light">0</button>
+          <button type="button" class="btn btn-light hide">&nbsp;</button>
+        </div>
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+      </div>
+      <div class="commands">
+        <div class="row">
+          <div class="col d-grid">
+            <button id="clear" class="btn btn-light cmd">Clear</button>
+          </div>
+          <div class="col d-grid">
+            <button id="start" class="btn btn-success cmd">Start</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="bootstrap-5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>    
+    <script src="main.js"></script>
+  </body>
+</html>
