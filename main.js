@@ -12,15 +12,11 @@ attachEvent(window, 'load', function() {
   	controller.add(this.innerText);
   }));
   
-  var cmdbtns = document.querySelectorAll('.cmd');
-  cmdbtns.forEach(b => attachEvent(b, 'click', (e) => {
-  	if(b.id === 'clear') {
-    	controller.clear();
-    }
-    else {
-    	window.TIMER_VALUE = controller.getValue();
-    }
-  }));  
+  // var cmdbtns = document.querySelectorAll('.cmd');
+  // cmdbtns.forEach(b => attachEvent(b, 'click', (e) => {
+ 	// window.flash('click'); 	
+	
+//  }));  
   
   var controller = {
   	setValue(text) {
