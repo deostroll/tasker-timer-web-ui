@@ -1,0 +1,23 @@
+body {
+  background-color: #ffb4b4;
+}
+
+.timer-input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.spacer {
+  height: 5px;
+  width: 100%;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.center-text {
+  text-align: center;
+  font-weight: bold;
+  font-size: 23px;
+}
