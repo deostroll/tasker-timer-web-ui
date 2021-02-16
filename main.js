@@ -12,12 +12,18 @@ attachEvent(window, 'load', function() {
   	controller.add(this.innerText);
   }));
   
-  // var cmdbtns = document.querySelectorAll('.cmd');
-  // cmdbtns.forEach(b => attachEvent(b, 'click', (e) => {
- 	// window.flash('click'); 	
+  var cmdbtns = document.querySelectorAll('.cmd');
+  cmdbtns.forEach(a => attachEvent(a, 'click', function(e) {
+  	let a = this;
+	if(a.id === 'clear') {
+		controller.clearValue();
+		e.preventDefault();
+	}
+	else {
+		a.href = `/start?val=${encodeURIComponent(controller.getValue()) }`	
+	}
+  }));
 	
-//  }));  
-  
   var controller = {
   	setValue(text) {
   		tinput.value = text;
